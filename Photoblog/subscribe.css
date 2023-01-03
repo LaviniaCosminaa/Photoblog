@@ -1,0 +1,82 @@
+body {
+	background-image: url(log4.jpg);
+	margin: 0;
+    padding: 0;
+	height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#subscribe-form
+{
+    display: none;
+}
+.form-box
+{
+    width:24%;
+	height:480px;
+	position:relative;
+	margin:10% auto;
+	background:rgba(0,0,0,0.7); 
+	padding:1vh;
+    overflow: hidden;
+	z-index: 5;
+}
+.form-box .message-box
+{
+	width:20vh;
+	margin:5vh auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px black;
+	border-radius: 3vh;
+	padding: 4vh 10vh;
+	cursor: none;
+	background:transparent;
+	outline: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 800;
+}
+.input-group-subscribe
+{
+	top: 20vh;
+	position:absolute;
+	width:36vh;
+	transition:.5s;
+}
+
+.subscribe-field
+{
+	width: 100%;
+	padding:1vh 0;
+	margin:1vh 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 2vh 6vh;
+	cursor: pointer;
+	display: block;
+	margin-top: 15%;
+	margin-left: 9.5%;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 4vh;
+}
+
+#subscribe
+{
+	left:6vh;
+}
+#subscribe input
+{
+	color:white;
+	font-size:18px;
+}

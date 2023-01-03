@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    height: 100%;
+    line-height: 1.15;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:black;
+    text-align: left;
+}
+.logos{
+    width: 3vh;
+    height: 3vh;
+}
+/*SPLIT PAGE*/
+.content{
+    display: flex;
+    position: relative;
+    margin:0;
+}
+ 
+/* CONTROL THE LEFT SIDE */
+.content .split-left {
+    width: 20%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    border-right: 2px solid white;
+}
+.content .split-left .centered {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.content .split-left .centered .title_menu{
+    margin-top: 0;
+    padding: 15%;
+    position: absolute;
+    height: 10vh;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    align-items: center;
+    font-size: 4vh;
+    color: white;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.content .split-left .centered .main__menu{
+    margin-top: 0;
+    position: absolute;
+    top: 32vh;
+    left: 0;
+    right: 0;   
+}
+.content .split-left .centered .main__menu ul li{
+    font-size: 2vh;
+    padding: 15%; 
+    margin: 0;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.content .split-left .centered .main__menu ul li a{
+    color: #bdb8d7;
+    display: block;
+}
+.content .split-left .centered .main__menu ul li a span{
+    font-size: 2.5vh;
+}
+.content .split-left .centered .main__menu ul li a .fas{
+    width: 25px;
+  }
+.content .split-left .centered .main__menu ul li:hover{
+    background-color: #958B8B;
+}
+.content .split-left .centered .main__menu ul li:hover a{
+    background-color: black;
+}
+.content .split-left .centered .social{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.content .split-left .centered .social a{
+    display: flex;
+    width: 5vh;
+    background: #001a1a;
+    height: 6vh;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 5px;
+    color: #001a1a;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} 
+.content .split-left .centered .social img{
+    align-self: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/* CONTROL THE RIGHT SIDE */
+.content .split-right {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    right: 0;
+    background-color: #1a1a1a;
+    /* background-color: #003333; */
+}
+.content .split-right .container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* bara de sus */
+.content .split-right .row{
+    position: fixed;
+    background-color: black;
+    height: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+.content .split-right .row .box_date{
+    margin-left:2vh;
+    padding: 1.5vh 10vh;
+    font-size: 20px;
+/*  border: 2px dotted yellow; */
+}
+.content .split-right .row .middle{
+    margin-right: 1vh;
+    margin-left: 1vh;
+    padding: 1vh 8vh;
+    font-size: 20px;
+    /* border: 2px dotted yellow; */
+}
+.content .split-right .row .box{
+    margin-right: 2vh;
+    padding: 1vh 8vh;
+    /* border: 2px dotted yellow; */
+}
+
+.content .split-right .row .box .subbutton {
+    background-color: black;
+    color: white;
+    padding: 1.5vh 1vh;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}  
+
+/* container */
+
+  .dropbtn {
+    background-color: black;
+    color: white;
+    padding: 1vh;
+    font-size: 10px;
+    font-weight: 900;
+    border-radius: 40%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    left: 97%;
+    top: 4%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-height: 8vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  .dropdown-content button {
+    color: black;
+    padding: 1vh 1vh;
+    text-decoration: none;
+    background-color: lightsalmon;
+    display: block;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: lightpink;}
+  
+.content .split-right .container {
+    background: #F3C693;
+    border: none;
+    top: 55%; 
+    left: 50%;
+    width: 100%;
+    height: 91%;
+    overflow: hidden; 
+    overflow-y: scroll;
+    z-index: -4;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .split-right .container .cont {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4vh;
+  }
+  /* Create two equal columns that sits next to each other */
+  .content .split-right .container .cont .column {
+    -ms-flex: 50%; 
+    flex: 50%;
+    padding: 0 2vh;
+  }
+  
+  .content .split-right .container .cont.column img {
+    margin-top: 2vh;
+    vertical-align: middle;
+    /* opacity: 0.8; */
+  }
+  /* .content .split-right .container .cont  .column  img:hover {
+    opacity: 1.0;
+  } */
+  /* Style the buttons */
+.btn2 {
+    border: none;
+    outline: none;
+    padding: 1vh 1.5vh;
+    background-color: #666;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+.btn2:hover {
+    background-color: #ddd;
+  }

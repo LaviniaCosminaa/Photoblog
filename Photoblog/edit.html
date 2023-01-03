@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography Site">
+    <link rel="stylesheet" href="edit.css">
+    <script type="text/javascript" src="edit.js"></script>
+    <title>PHOTOGRAPHY</title>
+</head>
+<body onload="startTime()"><!-- onload pentru oră -->
+    <div class="content"><!-- pagina -->
+        
+        <div class="split-left"><!-- partea de meniu din stanga -->
+            <div class="centered">
+                <div class="title_menu">MENU</div>
+                
+                <nav class="main__menu"><!-- meniu -->
+
+                    <ul>
+                      <li><a href="home.html"><span>Home</span></a></li>
+                      <li><a href="gallery.html"><span>Gallery</span></a></li>
+                      <li><a href="edit.html"><span>Original/Edit</span></a></li>
+                      <li><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                </nav> <!-- main-menu -->
+
+                <div class="social"><!-- butoane pentru social media links -->
+                    <a href="https://www.facebook.com/"><img class="logos" src="logo/LogoFb.png"></img></a>
+                    <a href="https://twitter.com/"><img class="logos" src="logo/LogoTw.png"></img></a>
+                    <a href="https://www.instagram.com/"><img class="logos" src="logo/LogoInsta.png"></img></a>
+                </div>
+            </div><!-- centered -->
+        </div><!-- split left -->
+
+
+
+        <div class="split-right"><!-- partea din dreapta -->
+
+            <div class="row"><!-- bara de sus -->
+                
+                <div class="box_date" id="datetime" style="color:white;"></div>
+                    
+
+                <div class="middle">
+                    <a href="home.html"><p style="color: white; ">PHOTOBLOG</p></a>
+                </div>
+
+                <div class="box">
+                  <button class='subbutton' onclick="SubButton()">Subscribe</button>   <!-- buton -->      
+                </div>
+            </div><!-- row -->
+            
+            <div class="centered"><!-- container de poze -->
+
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/1.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/1O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+                  
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/3.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/3O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+                 
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/4.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/4O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/5.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/5O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/6.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/6O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/7.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/7O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/8.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/8O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                    <div class="img-comp-img">
+                      <img src="images/9.jpg" width="700" height="500">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="images/9O.jpg" width="700" height="500">
+                    </div> 
+                </div>
+
+                <div class="img-comp-container"><!-- set de 2 poze -->
+                  <div class="img-comp-img">
+                    <img src="images/10.jpg" width="700" height="500">
+                  </div>
+                  <div class="img-comp-img img-comp-overlay">
+                    <img src="images/10O.jpg" width="700" height="500">
+                  </div> 
+              </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <script>
+        /*functie de comparare pentru elementele cu clasa img-comp-overlay*/
+        initComparisons();
+        </script>
+</body>
+</html>
